@@ -1,0 +1,1 @@
+CREATE database globant_bd2 owner postgres;
