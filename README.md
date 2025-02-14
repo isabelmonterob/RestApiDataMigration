@@ -15,3 +15,6 @@ Excecute sql files in the next order:
 1. Add csv files in `sources` folder
 2. Configure DB credentials in `web-api/config.py`
 3. Excecute `web-api/migration.py`
+
+### To run the web-api
+Please refer to the documentation `migdb/APPDOC.md`
