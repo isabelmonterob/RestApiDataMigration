@@ -24,3 +24,7 @@ def read_department(department_id: int, db: Session = Depends(get_db)):
     if data is None:
         raise HTTPException(status_code=404, detail="Department not found")
     return data
+
+@router.delete("/", response_model=list[schemas.Departaments])
+def delete_departments(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    return crud.delete_departments(db, skip=skip)

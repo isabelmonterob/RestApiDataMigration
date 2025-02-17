@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from datetime import datetime
 
 ##JOBS
 class JobsBase(BaseModel):
@@ -29,12 +30,16 @@ class Departaments(DepartamentsBase):
 #EMPLOYEES
 class HiredEmployeesBase(BaseModel):
     employee_name: str
-    date_hired: str   #validate
+    date_hired: datetime
     department_id: int
     job_id: int
 
 class HiredEmployeesCreate(HiredEmployeesBase):
-    pass
+    employee_id: int
+    employee_name: str
+    date_hired: datetime 
+    department_id: int
+    job_id: int
 
 class HiredEmployees(HiredEmployeesBase):
     employee_id: int

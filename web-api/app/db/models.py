@@ -6,14 +6,14 @@ class Jobs(Base):
     job_id = Column("job_id",Integer,primary_key=True, nullable=False)
     job=Column("job",String(50))
 
-class Departaments(Base):
+class Departments(Base):
     __tablename__ = "departments"
     department_id = Column("department_id",Integer,primary_key=True, nullable=False)
     department = Column("department",String(50))
 
 class HiredEmployees(Base):
     __tablename__ = "hired_employees"
-    employee_id = Column("employee_id",Integer,primary_key=True, nullable=False)
+    employee_id = Column(Integer, primary_key=True)
     employee_name = Column("employee_name",String(50))
     date_hired=Column("date_hired",DateTime)
     department_id=Column("department_id",Integer)
