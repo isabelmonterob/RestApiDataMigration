@@ -35,11 +35,7 @@ class HiredEmployeesBase(BaseModel):
     job_id: int
 
 class HiredEmployeesCreate(HiredEmployeesBase):
-    employee_id: int
-    employee_name: str
-    date_hired: datetime 
-    department_id: int
-    job_id: int
+    pass
 
 class HiredEmployees(HiredEmployeesBase):
     employee_id: int
