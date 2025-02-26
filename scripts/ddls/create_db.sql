@@ -1,1 +1,1 @@
-CREATE database globant_bd2 owner postgres;
+CREATE database globant_bd owner postgres;
